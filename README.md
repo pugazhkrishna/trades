@@ -54,6 +54,16 @@ vi) GET /stocks/{stockSymbol}/price?start={startDate}&end={endDate}
       200 OK - JSON with symbol, highest, lowest as key.
       404 Not Found - Error
 
+**3) Instructions to install and build**
 
+- Install Node
+- Install mongodb
+- Install github
+- Install visual studio (Text Editor)
+- Clone the project with this url - https://github.com/pugazhkrishna/trades.git
+- `trades` is the git folder name
+- Run `npm install` command -  this will install all the npm packages listed in package.json
+- Run `npm run` command
+- Now `Trading management platform` is ready to serve with rest API's
 
 

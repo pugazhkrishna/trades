@@ -60,10 +60,17 @@ vi) GET /stocks/{stockSymbol}/price?start={startDate}&end={endDate}
 - Install mongodb
 - Install github
 - Install visual studio (Text Editor)
-- Clone the project with this url - https://github.com/pugazhkrishna/trades.git
+- Clone the project with this url - `https://github.com/pugazhkrishna/trades.git`
 - `trades` is the git folder name
 - Run `npm install` command -  this will install all the npm packages listed in package.json
 - Run `npm run` command
 - Now `Trading management platform` is ready to serve with rest API's
 
+**4) Instructions to run test and generate coverage**
 
+- Rest API can be tested with the tool `Postman-Rest Client` and the link is `https://www.getpostman.com/downloads/`
+- Launch the postman desktop application once it is installed successfully.
+- Enter the url in the `Request section`
+- Enter the request params (arguments) in the `Body` section
+- Click `Send` button to hit the trade rest api
+- You can able to see the `Response` in the `Response Section`

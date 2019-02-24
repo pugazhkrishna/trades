@@ -13,5 +13,7 @@ router.route('/trades')
 
 router.route('/trades/users/:userId')
     .get(tradeController.getTradesUserWise)
+router.route('/:stockSyl/trades/')
+    .get(tradeController.getTradesStock)    
 
 export default router;

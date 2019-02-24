@@ -34,11 +34,12 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 app.use(express.static(path.join(__dirname, 'public')));
 
 import trades from '../trades/routes/trades.route';
-// app.use('/trades', trades);
-app.post('/trades', trades)
-app.get('/trades', trades)
-app.delete('/trades',trades)
-app.get('/trades/users/:userId',trades)
+ app.use('/', trades);
+ app.use('/stocks', trades)
+// app.get('/trades', trades)
+// app.delete('/trades',trades)
+// app.get('/trades/users/:userId',trades)
+// app.get('/stocks/:stockSyl/trades/type=/:tradeType',trades)
 
 app.get('/', (req, res) => {
     return res.end('API Connection success');
@@ -53,3 +54,4 @@ app.listen(process.env.PORT, () => {
     console.log(`App Server Listening at ${process.env.PORT}`);
     // console.log(moment().unix())
 });  
+

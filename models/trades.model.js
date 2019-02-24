@@ -7,7 +7,8 @@ var trades = mongoose.Schema({
     type:String,
     user:{
         id:Number,
-        name:String
+        name:String,
+        type:JSON
     },
     symbol:String,
     shares:Number,

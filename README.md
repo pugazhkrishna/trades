@@ -68,9 +68,12 @@ vi) GET /stocks/{stockSymbol}/price?start={startDate}&end={endDate}
 
 **4) Instructions to run test and generate coverage**
 
-- Rest API can be tested with the tool `Postman-Rest Client` and the link is `https://www.getpostman.com/downloads/`
+- Rest API can be tested with the tool `Postman-Rest Client` and the link is `https://www.getpostman.com/downloads/`.
 - Launch the postman desktop application once it is installed successfully.
-- Enter the url in the `Request section`
-- Enter the request params (arguments) in the `Body` section
-- Click `Send` button to hit the trade rest api
-- You can able to see the `Response` in the `Response Section`
+- Enter the url of the api in the `Request section`.
+- Select the type of HTTP method from the dropdown to hit- e.g. POST.
+- Under the `Body section` select the radio button `x-www-form-urlencoded`.
+- Under the `Body` section, pass the request body of the API in the form of key-value pairs. If it is post API, then we need to pass body or parameters.
+- Hit the send button. After clicking on "send" button, you will see `Response` in the `Response Section`.
+- Here, we have used "POST" method, in the same way, we can use remaining methods like GET, PUT, DELETE, etc
+

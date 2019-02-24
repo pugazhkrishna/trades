@@ -56,10 +56,10 @@ vi) GET /stocks/{stockSymbol}/price?start={startDate}&end={endDate}
 
 **3) Instructions to install and build**
 
-- Install Node
-- Install mongodb
-- Install github
-- Install visual studio (Text Editor)
+- Install Node with this link as reference - `https://nodejs.org/en/download/`
+- Install mongodb with this link as reference - `https://docs.mongodb.com/manual/administration/install-community/`
+- Install git with this link as reference - `https://git-scm.com/downloads`
+- Install visual studio (Text Editor) with this link as reference - `https://code.visualstudio.com/download`
 - Clone the project with this url - `https://github.com/pugazhkrishna/trades.git`
 - `trades` is the git folder name
 - Run `npm install` command -  this will install all the npm packages listed in package.json

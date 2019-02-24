@@ -1,0 +1,34 @@
+{
+  "name": "trades",
+  "version": "1.0.0",
+  "description": "managing and maintaining trades",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pugazhkrishna/trades.git"
+  },
+  "author": "pugazh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pugazhkrishna/trades/issues"
+  },
+  "homepage": "https://github.com/pugazhkrishna/trades#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "moment-timezone": "^0.5.23",
+    "mongoose": "^5.4.15",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "nodemon": "^1.18.10"
+  }
+}

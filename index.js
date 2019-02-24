@@ -2,7 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import path from 'path';
 
 // define our app using express
 const app = express();
@@ -31,15 +30,9 @@ mongoose.connect(String(process.env.MONGO_URL),{ useNewUrlParser: true }); // fo
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
-app.use(express.static(path.join(__dirname, 'public')));
-
 import trades from '../trades/routes/trades.route';
  app.use('/', trades);
  app.use('/stocks', trades)
-// app.get('/trades', trades)
-// app.delete('/trades',trades)
-// app.get('/trades/users/:userId',trades)
-// app.get('/stocks/:stockSyl/trades/type=/:tradeType',trades)
 
 app.get('/', (req, res) => {
     return res.end('API Connection success');

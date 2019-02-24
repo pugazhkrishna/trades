@@ -17,10 +17,6 @@ var trades = mongoose.Schema({
        type: Date,
        default: moment().tz('America/New_York').format('YYYY-MM-DD HH:mm:ss')
     }
-    // timeystamp:{
-    //     type: Date, 
-    //     default: Date.now
-    // }
 }, {
     versionKey: false 
   });

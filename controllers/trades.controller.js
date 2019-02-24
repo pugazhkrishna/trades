@@ -63,7 +63,7 @@ export const getTradesUserWise = (req,res)=>{
 export const getTradesStock = (req,res)=>{  
     let reqParam = req.params;
     let reqQuery = req.query;
-    models.trades.find({symbol:reqParam.symbol,type:reqParam.type, timestamp:{$gte:reqQuery.start, $lte:reqQuery.end}}).sort({id:1}).exec((err,data)=>{
+    models.trades.find({symbol:reqParam.stockSyl,type:reqQuery.type, timestamp:{$gte:new Date(reqQuery.start), $lte:new Date(reqQuery.end)}}).sort({id:1}).exec((err,data)=>{
         if(err) return res.json({ 'success': false, 'message': 'Trades get error', 'error':err });
          else{
              if(_.isEmpty(data)){

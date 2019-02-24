@@ -1,12 +1,12 @@
 # trades
 Managing and maintaining `Trades`
 
-1) Class Diagram
+**1) Class Diagram**
 
 ![alt text](https://github.com/pugazhkrishna/trades/blob/master/Trades.PNG)
 
 
-2) API Documentation
+**2) API Documentation**
 
 i) DELETE /erase
 

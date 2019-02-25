@@ -4,17 +4,25 @@ import models from '../models/trades.model'
 
 //create trades here
 export const addTrades = (req,res)=>{
-
-    const check = JSON.parse(req.body.user)
+    let check = {};
+    if(!_.isEmpty(req.body.user)){
+       check  = JSON.parse(req.body.user)
+    }
     let obj = {
+        id:req.body.id,
         type:req.body.type,
         user:check,
         symbol:req.body.symbol,
         shares:req.body.shares,
-        price:req.body.price,
-        id:req.body.id
+        price:req.body.price
     }
-    if(obj.shares >=10 & obj.shares <=30 & obj.price >=130.42 & obj.price <=195.65){
+    if(_.isEmpty(obj.id) || _.isEmpty(obj.type) || _.isEmpty(obj.user)|| _.isEmpty(obj.symbol) || _.isEmpty(obj.shares) || _.isEmpty(obj.price)){
+        return res.json({'message':'Please enter all fields'})
+    }
+    else if(obj.type!='sell' & obj.type != 'buy'){
+        return res.json({'message':'type should be sell or buy'});
+    }
+    else if(obj.shares >=10 & obj.shares <=30 & obj.price >=130.42 & obj.price <=195.65){
         const trades = new models.trades(obj);
         models.trades.findOne({id:req.body.id},(err,data)=>{
         if(!_.isEmpty(data) > 0){ //Checking already data exists
@@ -57,7 +65,7 @@ export const deleteTrades = (req,res)=>{
 
 //Get trades based on user id and sorted by asc order
 export const getTradesUserWise = (req,res)=>{  
-    models.trades.find({'user.id':req.params.userId}).sort({id:1}).exec((err,data)=>{
+    models.trades.find({'user.id':Number(req.params.userId)}).sort({id:1}).exec((err,data)=>{
         if(err) return res.json({ 'success': false, 'message': 'Trades get error', 'error':err });
          else{
              if(_.isEmpty(data)){

@@ -78,4 +78,9 @@ vi) GET /stocks/{stockSymbol}/price?start={startDate}&end={endDate}
 - Here, we have used "POST" method, in the same way, we can use remaining methods like GET, PUT, DELETE, etc
 
 i) Get all trades
+
 ![alt text](https://github.com/pugazhkrishna/trades/blob/master/get_all_trades.png)
+
+ii) Add trades
+
+![alt text](https://github.com/pugazhkrishna/trades/blob/master/post_Request.png)

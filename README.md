@@ -76,4 +76,4 @@ vi) GET /stocks/{stockSymbol}/price?start={startDate}&end={endDate}
 - Under the `Body` section, pass the request body of the API in the form of key-value pairs. If it is post API, then we need to pass body or parameters.
 - Hit the send button. After clicking on "send" button, you will see `Response` in the `Response Section`.
 - Here, we have used "POST" method, in the same way, we can use remaining methods like GET, PUT, DELETE, etc
-
+![alt text](https://github.com/pugazhkrishna/trades/blob/master/get_all_trades.PNG)

@@ -84,3 +84,15 @@ i) Get all trades
 ii) Add trades
 
 ![alt text](https://github.com/pugazhkrishna/trades/blob/master/post_Request.png)
+
+iii) Trades filter by user id
+
+![alt text](https://github.com/pugazhkrishna/trades/blob/master/user_based_Search.png)
+
+iv) Trades type and date range
+
+![alt text](https://github.com/pugazhkrishna/trades/blob/master/highest_lowest.png)
+
+v) Highest and lowest price
+
+![alt text](https://github.com/pugazhkrishna/trades/blob/master/type_date_range.png)

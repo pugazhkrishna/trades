@@ -92,8 +92,8 @@ iii) Trades filter by user id
 
 iv) Trades type and date range
 
-![alt text](https://github.com/pugazhkrishna/trades/blob/master/highest_lowest.png)
+![alt text](https://github.com/pugazhkrishna/trades/blob/master/type_date_range.png)
 
 v) Highest and lowest price
 
-![alt text](https://github.com/pugazhkrishna/trades/blob/master/type_date_range.png)
+![alt text](https://github.com/pugazhkrishna/trades/blob/master/highest_lowest.png)
